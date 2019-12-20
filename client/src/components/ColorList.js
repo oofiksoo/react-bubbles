@@ -73,9 +73,9 @@ const ColorList = ({ colors, updateColors }) => {
       </ul>
       {editing && (
         <form onSubmit={saveEdit}>
-          <legend>edit color</legend>
+          <legend>Edit Color</legend>
           <label>
-            color name:
+            Color Name:
             <input
               onChange={e =>
                 setColorToEdit({ ...colorToEdit, color: e.target.value })
@@ -84,7 +84,7 @@ const ColorList = ({ colors, updateColors }) => {
             />
           </label>
           <label>
-            hex code:
+            Hex Code:
             <input
               onChange={e =>
                 setColorToEdit({
@@ -96,8 +96,8 @@ const ColorList = ({ colors, updateColors }) => {
             />
           </label>
           <div className="button-row">
-            <button type="submit">save</button>
-            <button onClick={() => setEditing(false)}>cancel</button>
+            <button type="submit">Save</button>
+            <button onClick={() => setEditing(false)}>Cancel</button>
           </div>
         </form>
       )}

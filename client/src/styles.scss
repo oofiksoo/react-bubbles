@@ -149,11 +149,13 @@ form {
     display: flex;
     flex-direction: column;
     legend {
-        padding-left: 40px;
         font-weight: bold;
-        text-align: left;
-        text-decoration: underline;
-        margin-bottom: 16px;
+        text-align: center;
+        text-decoration: none;
+        background-color: white;
+        border-radius: 2rem;
+        color: black;
+        margin: 1rem;
     }
     label {
         display: flex;
@@ -171,9 +173,15 @@ form {
     padding: 0 36px 0 41px;
     button {
         border: none;
-        background-color: black;
+        background-color: blue;
+        border: 1px solid blue;
+        border-radius: 2rem;
         color: white;
         padding: 3px 8px;
         margin-top: 16px;
+    }
+    button:hover {
+        background-color: white;
+        color: blue;
     }
 }
