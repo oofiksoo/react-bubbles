@@ -1,99 +1,179 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
-
 html,
 body,
 #root,
 .App {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .App {
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  display: flex;
-
-  svg {
-    height: 100%;
-  }
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    display: flex;
+    svg {
+        height: 100%;
+    }
 }
 
-.spacer {
-  height: 100%;
+.login-form {
+    margin: 0 auto;
+    form {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        border: 2px solid black;
+        border-radius: 2rem;
+        padding: 1rem;
+        width: 40%;
+        font-size: 0.7rem;
+        font-weight: bold;
+        input {
+            margin: 0.5rem;
+        }
+        button {
+            margin: 0.5rem;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            border: 1px solid black;
+            border-radius: 2rem;
+            width: 40%;
+        }
+        button:hover {
+            background-color: white;
+            color: black;
+        }
+    }
 }
 
 .bubble-wrap {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+    margin: 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    p {
+        background-color: black;
+        color: white;
+        width: 70vw;
+        padding: 1rem;
+        border-radius: 2rem;
+        margin: 1rem;
+    }
 }
 
 .colors-wrap {
-  height: 100%;
-  width: 300px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-
-  ul {
-    list-style: none;
-    text-align: start;
-
-    li {
-      cursor: pointer;
-      padding: 6px 0;
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
+    position: absolute;
+    left: 0;
+    width: 25vw;
+    height: 95vh;
+    background-color: black;
+    color: white;
+    border-bottom-right-radius: 5rem;
+    ul {
+        list-style: none;
+        text-align: start;
+        li {
+            cursor: pointer;
+            padding: 6px 0;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
     }
-  }
+    hr {
+        width: 80%;
+    }
+    p {
+        background-color: white;
+        color: black;
+        border-radius: 2rem;
+        margin: 1rem;
+        font-weight: bold;
+    }
+}
+
+.add-color {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    form {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        margin: 0 3.5rem;
+        border: 2px solid white;
+        border-radius: 2rem;
+        padding: 1rem;
+        input {
+            margin: 0.3rem auto;
+        }
+        button {
+            margin: 0.5rem;
+            background-color: blue;
+            color: white;
+            border: 1px solid blue;
+            padding: 0.5rem;
+            white-space: nowrap;
+            border-radius: 2rem;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: white;
+            color: blue;
+        }
+    }
 }
 
 .delete {
-  color: rgb(216, 87, 87);
+    color: rgb(216, 87, 87);
+    margin: 0.5rem;
 }
 
 .color-box {
-  height: 16px;
-  width: 16px;
-  border: 1px lightgray solid;
-  margin-right: 36px;
+    height: 16px;
+    width: 16px;
+    border: 1px lightgray solid;
+    margin-right: 36px;
 }
 
 form {
-  margin-top: 60px;
-  display: flex;
-  flex-direction: column;
-
-  legend {
-    padding-left: 40px;
-    font-weight: bold;
-    text-align: left;
-    text-decoration: underline;
-    margin-bottom: 16px;
-  }
-
-  label {
+    margin-top: 60px;
     display: flex;
-    justify-content: space-between;
-    padding: 4px 36px 4px 40px;
-  }
-
-  input {
-    width: 100px;
-  }
+    flex-direction: column;
+    legend {
+        padding-left: 40px;
+        font-weight: bold;
+        text-align: left;
+        text-decoration: underline;
+        margin-bottom: 16px;
+    }
+    label {
+        display: flex;
+        justify-content: space-between;
+        padding: 4px 36px 4px 40px;
+    }
+    input {
+        width: 100px;
+    }
 }
 
 .button-row {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 36px 0 41px;
-
-  button {
-    border: none;
-    background-color: black;
-    color: white;
-    padding: 3px 8px;
-    margin-top: 16px;
-  }
+    display: flex;
+    justify-content: space-between;
+    padding: 0 36px 0 41px;
+    button {
+        border: none;
+        background-color: black;
+        color: white;
+        padding: 3px 8px;
+        margin-top: 16px;
+    }
 }
